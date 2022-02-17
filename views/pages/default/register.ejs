@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../../partials/head.ejs') %>
+        <link rel='stylesheet' href='/css/default.css' type='text/css'>
+    </head>
+    <body>
+        <h3>Silahkan daftar nama user yang akan dimasukkan ke dashboard</h3>
+        <form method="POST" action="/dashboard/register">
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="username" class="form-label">Username</label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" class="form-control" name="username">
+                </div>
+                <div class="col-auto">
+                    <span class="form-text">
+                        Don't leave the user empty
+                    </span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </body>

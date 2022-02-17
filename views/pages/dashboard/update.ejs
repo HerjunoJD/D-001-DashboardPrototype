@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../../partials/head.ejs') %>
+        <link rel='stylesheet' href='/css/default.css' type='text/css'>
+    </head>
+    <body>
+        <%- include('../../partials/navbar.ejs') %>
+        <div class="update_page">
+            <h1>Username : <%= dataUser.username %></h1>
+            <button onclick="Submit(`<%= dataUser.id %>`)">Submit</button>
+            <button onclick="Delete(`<%= dataUser.id %>`)">Delete</button>
+        </div>
+    <script>
+      function Submit(id){
+        fetch('/dashboard/update/' + id, {
+          method: 'PATCH'
+        })
+        location.href = '/dashboard/intermezzo';
+      }
+
+      function Delete(id){
+          fetch('/dashboard/delete/' + id, {
+              method: 'DELETE'
+          })
+          location.href = '/dashboard/delete';
+      }
+    </script>
+    </body>
+</html>

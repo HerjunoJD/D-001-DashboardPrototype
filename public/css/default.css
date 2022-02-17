@@ -1,0 +1,106 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: beige;
+}
+
+.navbar {
+    justify-content: flex-start;
+}
+
+.navbar a {
+    margin-left: 1em;
+}
+
+.homepage a {
+    margin: 1em;
+}
+
+.dashboardButton {
+    background-color: rgb(150, 200, 50);
+    border: 0.1em;
+    border-color: black;
+    border-style: solid;
+    padding: 0.25em 3em;
+    color: white;
+    font-size: 1em;
+}
+
+.update_page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.update_page button {
+    background-color: rgb(200, 200, 100);
+    border: 0.15em;
+    border-color: black;
+    border-radius: 1em;
+    border-style: solid;
+    padding: 1em 3em;
+    font-size: 1em;
+    margin-top: 3em;
+}
+
+.update_page h1 {
+    margin-top: 3em;
+}
+
+.intermezzo_page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intermezzo_page h3 {
+    margin: 1em;
+}
+
+.intermezzo_page button {
+    background-color: rgb(100, 150, 200);
+    border: 0.2em;
+    border-color: black;
+    border-radius: 1em;
+    border-style: solid;
+    padding: 1em 3em;
+    color: white;
+    font-size: 1em;
+}
+
+.delete_page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete_page h1 {
+    color: red;
+}
+
+.delete_page h3 {
+    color: red;
+    margin: 1em;
+}
+
+.delete_page button {
+    background-color: rgb(255, 255, 255);
+    border: 0.2em;
+    border-color: black;
+    border-radius: 1em;
+    border-style: solid;
+    padding: 1em 3em;
+    color: red;
+    font-size: 1em;
+}
